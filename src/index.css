@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto";
+}
+:root {
+  --primary: #080808;
+  --secondary: #171717;
+  --bg-lighter: #242423;
+  --text-primary: #cfdbd5;
+  --text-primary-hover: #8de0f9;
+  --text-secondary: #e8eddf;
+  --yellow: #f5cb5c;
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 245);
+  --sub-title: rgb(161, 161, 170);
+  --blue: rgb(93, 188, 252);
+  --icon-glow: 1px 1px 10px #f5cc5c48, 2px 2px 12px #54200048,
+    3px 3px 16px #000000;
+  --icon-glow-hover: 1px 1px 10px #f5cc5c48;
+}
+
+body {
+  background: var(--primary);
+  color: var(--text-primary);
+}
+.container {
+  border: 1px solid var(--border);
+  background-color: var(--secondary);
+  width: 80%;
+  margin: 0 auto;
+  padding: .5rem 3rem;
+}
+.devider {
+  border-bottom: 2px solid var(--border);
+  margin: 3rem 0;
+}
+
+/* Header Styiling */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.border {
+  border: 2px solid red;
+}
+button {
+  all: unset;
+  transition: all 0.5s;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  scale: .8;
+}
+
+@media (max-width:500px) {
+    .container{
+        width: 98%;
+    }
+    
+}

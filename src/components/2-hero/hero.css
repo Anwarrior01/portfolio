@@ -1,0 +1,24 @@
+section.hero .left-section{
+    flex-grow: 1;
+}
+section.hero .avatar{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    padding: .1rem;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 30px rgb(0, 0, 0);
+}
+section.hero .parent-avatar{
+    width: 130px;
+    height: 130px;
+     border: 1px solid var(--yellow);
+    border-radius: 50%;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     box-shadow: var(--icon-glow);
+     background: rgb(15, 15, 15);
+}
