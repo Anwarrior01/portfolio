@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 * {
   margin: 0;
@@ -40,7 +42,11 @@ body {
   border-bottom: 2px solid var(--border);
   margin: 3rem 0;
 }
-
+.devider:first-of-type {
+  border-bottom: 2px solid var(--border);
+  margin: 2rem 0;
+  
+}
 /* Header Styiling */
 li {
   list-style: none;
@@ -66,9 +72,17 @@ button:active {
   scale: .8;
 }
 
+@media (max-width:1000px) {
+    .container{
+        width: 90%;
+        padding: .5rem 2rem;
+    }
+    
+}
 @media (max-width:500px) {
     .container{
         width: 98%;
+        padding: .5rem 1rem;
     }
     
 }

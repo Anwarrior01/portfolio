@@ -1,24 +1,88 @@
-section.hero .left-section{
-    flex-grow: 1;
+/* ==============================================================================
+Table of Contents 
+ ===============================================================================*/
+/* 
+1 - left Section 
+2 - Right Section (Animation)
+
+*/
+/* ==============================================================================
+1 - left Section 
+ ===============================================================================*/
+.hero-app{
+    margin: 0 auto;
+  padding: 2rem 4rem;
 }
-section.hero .avatar{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; 
-    padding: .1rem;
-   display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 1px 1px 30px rgb(0, 0, 0);
+ .hero-bg  {
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    background: url('../../../public/bg-portfolio.png'),#0b0b0bd3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
 }
-section.hero .parent-avatar{
-    width: 130px;
-    height: 130px;
-     border: 1px solid var(--yellow);
-    border-radius: 50%;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-     box-shadow: var(--icon-glow);
-     background: rgb(15, 15, 15);
+section.hero .left-section {
+  flex-grow: 1;
 }
+section.hero .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 30px rgb(0, 0, 0);
+}
+section.hero .parent-avatar {
+  width: 130px;
+  height: 130px;
+  border: 1px solid var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--icon-glow);
+  background: rgb(15, 15, 15);
+}
+section.hero h1.title {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin: 1rem 0 1rem 0;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+section.hero p.sub-title {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+section.hero .all-icons {
+  font-size: 1.6rem;
+  gap: 1rem;
+}
+section.hero .all-icons .icon {
+  border-radius: 50%;
+  box-shadow: var(--icon-glow);
+  border: 0.3px solid #f5cc5c76;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+section.hero .all-icons .icon:hover{
+    color: var(--title);
+  border: 0.3px solid #f5cc5c;
+  box-shadow: var(--icon-glow-hover);
+  transition: all 0.5s;
+}
+
+
+
+
+
+/* ==============================================================================
+2 - Right Section (Animation)
+ ===============================================================================*/

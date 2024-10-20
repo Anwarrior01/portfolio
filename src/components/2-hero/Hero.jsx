@@ -2,16 +2,38 @@ import React from 'react'
 import './hero.css'
 export default function Hero() {
   return (
-    <section className='hero flex'>
-      <div className="left-section">
-        <div className="parent-avatar">
-          <img src="../../public/anwarrior01-logo.png" alt="" className="avatar" />
-        </div>
-      </div>
+    <div className="hero-bg">
+      <section className="hero flex">
+        <div className="left-section">
+          <div className="parent-avatar">
+            <img
+              src="../../public/anwarrior01-logo.png"
+              alt=""
+              className="avatar"
+            />
+          </div>
 
-      <div className="right-section animation border">
-        bbbbbbbbb
-      </div>
-    </section>
-  )
+          <h1 className="title">
+            I'm a Developer and Designer Bringing Ideas to Life with Stunning
+            Digital Creations
+          </h1>
+          <p className="sub-title">
+            I’m a passionate front-end developer, full-stack Developer, web
+            designer, and UI/UX enthusiast. I focus on finding the right balance
+            between looks and function to build websites and web apps that are
+            easy to use and look great. I enjoy turning ideas into digital
+            solutions that people love to interact with.
+          </p>
+          <div className="all-icons flex">
+            <div className="icon icon-twitter-square"></div>
+            <div className="icon icon-instagram"></div>
+            <div className="icon icon-facebook-square"></div>
+            <div className="icon icon-linkedin-square"></div>
+            <div className="icon icon-github"></div>
+          </div>
+        </div>
+        <div className="right-section animation border">bbbbbbbbb</div>
+      </section>
+    </div>
+  );
 }
