@@ -9,7 +9,7 @@ Table of Contents
 */
 
 /* ==============================================================================
-3 - Modal
+1 - Header Styling
  ===============================================================================*/
 header.flex {
   justify-content: space-between;
@@ -108,6 +108,8 @@ header .icon-close:hover {
   inset: 0;
   background-color: #242423c1;
   z-index: 11;
+  backdrop-filter: blur(4px);
+  transition: all .5s ;
 }
 @keyframes menuShow {
   0% {

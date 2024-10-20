@@ -9,19 +9,19 @@ Table of Contents
 /* ==============================================================================
 1 - left Section 
  ===============================================================================*/
-.hero-app{
-    margin: 0 auto;
-  padding: 2rem 4rem;
+.hero-app {
+  margin: 0 auto;
+  width: 80%;
 }
- .hero-bg  {
-    width: 80%;
-    height: 500px;
-    margin: 0 auto;
-    background: url('../../../public/bg-portfolio.png'),#0b0b0bd3;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: soft-light;
+.hero-bg {
+  padding: 2rem 4rem;
+  height: 500px;
+  margin: 0 auto;
+  background: url("../../../public/bg-portfolio.png"), #0b0b0bd3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: soft-light;
 }
 section.hero .left-section {
   flex-grow: 1;
@@ -72,16 +72,43 @@ section.hero .all-icons .icon {
   color: var(--text-primary);
   cursor: pointer;
 }
-section.hero .all-icons .icon:hover{
-    color: var(--title);
+section.hero .all-icons .icon:hover {
+  color: var(--title);
   border: 0.3px solid #f5cc5c;
   box-shadow: var(--icon-glow-hover);
   transition: all 0.5s;
 }
 
-
-
-
+@media (max-width: 1000px) {
+  .hero-app {
+    width: 90%;
+  }
+  section.hero .left-section .title {
+    font-size: 1.6rem;
+  }
+  section.hero .left-section p.sub-title {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+  }
+}
+/* @media (max-width: 700px) {
+  .hero-app {
+    height: 100vh;
+  }
+  section.hero .left-section .title {
+    font-size: 1.6rem;
+  }
+  section.hero .left-section p.sub-title {
+    font-size: .8rem;
+    margin-bottom: .8rem;
+  }
+} */
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+    padding: 0.5rem 1rem;
+  }
+}
 
 /* ==============================================================================
 2 - Right Section (Animation)

@@ -1,0 +1,63 @@
+/* ==============================================================================
+Table of Contents 
+ ===============================================================================*/
+/* 
+1 - left-Section Styling
+2 - Right-Section Styling
+*/
+
+
+main.flex{
+   gap: 3rem;
+   align-items: start;
+}
+
+/* ==============================================================================
+1 - left-Section Styling
+ ===============================================================================*/
+main section.left-section.flex{
+    flex-direction: column;
+    gap: 16px;
+}
+main section.left-section.flex button{
+    background-color: rgba(36,37,46,1);
+    width: 11rem;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    opacity: .6;
+}
+main section.left-section.flex button.active{
+    opacity: 1;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    box-shadow: var(--icon-glow-hover);
+    border: 1px solid var(--border);
+    text-shadow: var(--icon-glow);
+    padding: 0.8rem 0;
+}
+main section.left-section.flex button:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============================================================================
+1 - Right-Section Styling
+ ===============================================================================*/
+
+main section.right-section{
+    /* flex-grow: 1; */
+}
