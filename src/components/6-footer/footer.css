@@ -1,0 +1,46 @@
+footer.flex {
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+footer.flex ul {
+  gap: 1rem;
+}
+footer.flex ul a {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  transition: .5s;
+}
+footer.flex ul a:visited {
+  color: var(--text-primary);
+}
+footer.flex ul a:hover{
+    color: var(--yellow);
+  font-size: 1rem;
+}
+footer.flex p{
+    color: var(--text-primary);    
+}
+footer.flex .all-icons {
+  font-size: 1.6rem;
+  gap: 1rem;
+}
+footer.flex .all-icons .icon {
+  border-radius: 50%;
+  box-shadow: var(--icon-glow);
+  border: 0.3px solid #f5cc5c76;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+footer.flex .all-icons .icon:hover {
+  color: var(--title);
+  border: 0.3px solid #f5cc5c;
+  box-shadow: var(--icon-glow-hover);
+  transition: all 0.5s;
+}
+@media (max-width:800px) {
+    
+    footer.flex {
+  flex-direction: column;
+  gap: 2rem;
+}
+}

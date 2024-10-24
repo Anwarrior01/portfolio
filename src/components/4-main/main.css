@@ -4,6 +4,7 @@ Table of Contents
 /* 
 1 - left-Section Styling
 2 - Right-Section Styling
+3 - Responsive
 */
 
 
@@ -34,8 +35,9 @@ main section.left-section.flex button.active{
     opacity: 1;
     font-weight: bold;
     letter-spacing: 1.2px;
-    box-shadow: var(--icon-glow-hover);
-    border: 1px solid var(--border);
+    /* box-shadow: var(--icon-glow-hover); */
+    /* border: 1px solid var(--border); */
+    border: 1px solid var(--blue);
     text-shadow: var(--icon-glow);
     padding: 0.8rem 0;
 }
@@ -55,9 +57,90 @@ main section.left-section.flex button:hover{
 
 
 /* ==============================================================================
-1 - Right-Section Styling
+2 - Right-Section Styling
  ===============================================================================*/
 
-main section.right-section{
+main section.right-section.flex{
     /* flex-grow: 1; */
+    flex-wrap: wrap;
+    column-gap: 1.6rem;
+    row-gap: 2rem;
+    justify-content: center;
+}
+.card{
+    border: 1px solid var(--blue-light);
+    transition: .5s;
+    background-image: linear-gradient(rgba(255,255,255,.08),rgba(0, 0, 0, 0.196));
+}
+.card:hover{
+    border: 1px solid var(--blue);
+    rotate: 2deg;
+    scale: 1.05;
+    cursor: pointer;
+}
+
+.card .box{
+    padding: 1rem 0.2rem 1rem .8rem ;
+}
+.card .box .title{
+    color: var(--text-primary);
+}
+.card .box .sub-title{
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: .7rem;
+    margin-bottom: 1.8rem;
+}
+.card .box .icons{
+    justify-content: space-between;
+}
+.card .box .icon-link ,
+.card .box .icon-github{
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: .5s;
+    opacity: 0.7;
+}
+.card .box .icon-link:hover ,
+.card .box .icon-github:hover{
+    font-size: 1.3rem;
+    color: var(--yellow);
+    border-radius: 50%;
+    box-shadow: var(--icon-glow-hover);
+    opacity: 1;
+}
+.card .box .link{
+    font-size: .9rem;
+    color: var(--yellow);
+    opacity: 0.8;
+    margin-right: 8px;
+    transition: .3s;
+}
+.card .box .link:hover{
+    font-size: 1rem;
+    opacity: 1;
+    margin-right: 4px;
+}
+
+/* ==============================================================================
+3 - Responsive
+ ===============================================================================*/
+
+@media (max-width: 600px) {
+ main.flex{
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+ }
+ main section.left-section.flex{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ main section.left-section.flex button{
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+ }
 }

@@ -21,10 +21,11 @@ html {
   --border: rgba(63, 63, 70, 0.4);
   --title: rgb(244, 244, 245);
   --sub-title: rgb(161, 161, 170);
+  --blue-light: rgba(93, 188, 152,.3);
   --blue: rgb(93, 188, 252);
   --icon-glow: 1px 1px 10px #f5cc5c48, 2px 2px 12px #54200048,
     3px 3px 16px #000000;
-  --icon-glow-hover: 1px 1px 10px #f5cc5c48;
+  --icon-glow-hover: 1px 1px 10px #f8d87f48;
 }
 
 body {

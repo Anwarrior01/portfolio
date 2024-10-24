@@ -15,7 +15,6 @@ Table of Contents
 }
 .hero-bg {
   padding: 2rem 4rem;
-  height: 500px;
   margin: 0 auto;
   background: url("../../../public/bg-portfolio.png"), #0b0b0bd3;
   background-size: cover;
