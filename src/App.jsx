@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import Header from "./components/1-header/Header"
 import Hero from "./components/2-hero/Hero"
 import About from "./components/3-about/About"
@@ -6,9 +7,13 @@ import Contact from "./components/5-contact/Contact"
 import Footer from "./components/6-footer/Footer"
 
 function App() {
-
+  useEffect(()=>{
+    window.addEventListener("scroll",()=>{
+      console.log("object")
+    })
+  },[])
   return (
-    <div className="website-content">
+    <div id="up" className="website-content">
       <div className="container">
         <Header />
         <div className="devider"></div>
@@ -17,7 +22,7 @@ function App() {
         <Hero />
       </div>
       <div className="container">
-      {/* <div className="devider"></div> */}
+        {/* <div className="devider"></div> */}
         <About />
         <div className="devider"></div>
         <Main />
@@ -25,6 +30,9 @@ function App() {
         <Contact />
         <div className="devider"></div>
         <Footer />
+        <a href="#up">
+          <button className="icon-keyboard_arrow_up scroll2Top"></button>
+        </a>
       </div>
     </div>
   );
