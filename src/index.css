@@ -131,7 +131,7 @@ button:active {
   border-radius: 50%;
   position: fixed;
   bottom: 1%;
-  right: 1%;
+  right: 10%;
   color: rgb(48, 48, 48);
   text-align: center;
 }
