@@ -9,7 +9,11 @@ export default function Hero() {
       <section className="hero flex">
         <div className="left-section">
           <div className="parent-avatar">
-            <img src="../../public/anwarrior01.png" alt="" className="avatar" />
+            <img
+              src="https://i.ibb.co/B6dnrDB/anwarrior01.png"
+              alt=""
+              className="avatar"
+            />
           </div>
 
           <h1 className="title">
@@ -34,7 +38,7 @@ export default function Hero() {
         <div className="right-section animation ">
           <Lottie
             style={{
-              width:"33rem"
+              width: "33rem",
             }}
             animationData={hero}
           />
