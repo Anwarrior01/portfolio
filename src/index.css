@@ -52,7 +52,7 @@ html {
   --icon-glow: 1px 1px 10px #50727bb0, 2px 2px 12px #535c915a,
   3px 3px 16px #1B1A55;
   --icon-glow-hover: 1px 1px 10px #535c915a;
-  --hero-bg : url("../../../public/bg-portfolio.png"), #CFDBD5; 
+  --hero-bg : url("https://i.ibb.co/sq1zPCv/bg-portfolio.png"), #CFDBD5; 
   --projects-btn : #FFD93D;
   --projects-border : rgb(10, 37, 55);
   --projects-btn-text-primary: #242423;
