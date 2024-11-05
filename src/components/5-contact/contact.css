@@ -10,7 +10,6 @@ section.contact-us .title{
 }
 section.contact-us .sub-title{
     color: var(--text-secondary);
-    margin-bottom: 2rem;
     line-height: 1.6rem;
 }
 section.contact-us label{
@@ -63,9 +62,7 @@ section.contact-us .submit:hover{
  ===============================================================================*/
 
 @media (max-width: 600px) {
-    .contact-animation{
-        display: none;
-    }
+    
     section.contact-us form{
         display: flex;
         flex-direction: column;

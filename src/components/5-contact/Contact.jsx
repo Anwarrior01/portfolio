@@ -19,7 +19,7 @@ export default function Contact({mode}) {
 
       <div
         className="flex "
-        style={{ justifyContent: "space-around", alignItems: "center" }}
+        style={{ justifyContent: "space-between", alignItems: "end" }}
       >
         <form action="" onSubmit={handleSubmit}>
           <div>

@@ -80,7 +80,7 @@ export default function About({ mode }) {
       {/* Backend Skills Section */}
       <div className="md:flex items-center gap-12">
         {/* Text content */}
-        <div className="md:w-1/2 order-1 md:order-2 p-6 fourth">
+        <div className="md:w-1/2 order-1 md:order-2 p-6 fourth sm:ml-20 ml-0">
           <h2
             style={{ color: "var(--text-primary)" }}
             className="text-gray-200 text-3xl font-bold mb-4"
@@ -109,7 +109,7 @@ export default function About({ mode }) {
         </div>
 
         {/* Lottie Animation */}
-        <div className="md:w-1/2 order-2 md:order-1 py-6 third">
+        <div className="md:w-1/2 order-2 md:order-1 py-6 third sm:-translate-x-10 -translate-x-0">
           <Lottie
             style={{
               width: "32rem",
