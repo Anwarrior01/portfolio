@@ -113,8 +113,11 @@ section.hero p.sub-title{
   section.hero h1.title,
 section.hero p.sub-title{
   width: 180%;
+}section.hero .avatar {
+  width: 100px;
+  height: 100px;
+margin: 0 auto !important;
 }
-
 
 }
 /* @media (max-width: 700px) {
@@ -134,9 +137,11 @@ section.hero p.sub-title{
     width: 98%;
     padding: 0.5rem 1rem;
   }
-  section.hero h1.title{
-    font-size: 1rem;
+  section.hero h1.title {
+    font-size: 1.2rem !important;
+    line-height: 1.6rem;
   }
+  
 }
 
 /* ==============================================================================
