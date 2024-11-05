@@ -9,10 +9,10 @@ Table of Contents
 /* ==============================================================================
 1 - left Section 
  ===============================================================================*/
-section.hero{
+section.hero {
   justify-content: space-around;
 }
- .hero-app {
+.hero-app {
   margin: 0 auto;
   width: 80%;
 }
@@ -65,7 +65,6 @@ section.hero p.sub-title {
   line-height: 1.5rem;
   margin-bottom: 2rem;
   width: 135%;
-
 }
 section.hero .all-icons {
   font-size: 1.6rem;
@@ -93,32 +92,28 @@ section.hero .all-icons .icon:hover {
     font-size: 1.6rem;
   }
   section.hero .left-section p.sub-title {
-    font-size: .8rem;
-    margin-bottom: .8rem;
+    font-size: 0.8rem;
+    margin-bottom: 0.8rem;
   }
-  section.hero{
+  section.hero {
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
   }
-   section.hero h1.title,
-section.hero p.sub-title{
-  width: 100% !important;
-}
-.right-section.animation{
-  margin-right: 14rem !important; 
-}
+  section.hero h1.title,
+  section.hero p.sub-title {
+    width: 100% !important;
+  }
+  .right-section.animation {
+    margin-right: 14rem !important;
+  }
 }
 @media (max-width: 1200px) {
   section.hero h1.title,
-section.hero p.sub-title{
-  width: 180%;
-}section.hero .avatar {
-  width: 120px;
-  height: 120px;
-
-}
-
+  section.hero p.sub-title {
+    width: 180%;
+  }
+  
 }
 /* @media (max-width: 700px) {
   .hero-app {
@@ -143,19 +138,31 @@ section.hero p.sub-title{
   section.hero h1.title {
     font-size: 1.2rem !important;
     line-height: 1.6rem;
+    text-align: center;
   }
-  .right-section.animation{
-  
-  translate: 7rem 2rem;
-}
-  .right-section.animation .laptop{
-width: 24rem !important;
+  section.hero p.sub-title{
+    
+  }
+  .right-section.animation {
+    translate: 7rem 2rem;
+  }
+  .right-section.animation .laptop {
+    width: 24rem !important;
+  }
+  section.hero .avatar {
+    width: 90px;
+    height: 90px;
+  }
+  section.hero .parent-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
   }
 }
 
 /* ==============================================================================
 2 - Right Section (Animation)
  ===============================================================================*/
-.right-section.animation{
+.right-section.animation {
   translate: 8rem 2rem;
 }
