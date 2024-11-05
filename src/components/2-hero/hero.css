@@ -135,27 +135,36 @@ section.hero .all-icons .icon:hover {
     width: 98%;
     padding: 0.5rem 1rem;
   }
+  section.hero.flex{
+    width: 100% ;
+  }
   section.hero h1.title {
     font-size: 1.2rem !important;
     line-height: 1.6rem;
     text-align: center;
+    margin-top: 2rem;
   }
   section.hero p.sub-title{
+    text-align: center;
+    padding: 1rem;
     
   }
+  section.hero .all-icons {
+    justify-content: center;
+  }
   .right-section.animation {
-    translate: 7rem 2rem;
+    translate: 7rem 1rem !important;
   }
   .right-section.animation .laptop {
-    width: 24rem !important;
+    width: 30rem !important;
   }
   section.hero .avatar {
-    width: 90px;
-    height: 90px;
-  }
-  section.hero .parent-avatar {
     width: 100px;
     height: 100px;
+  }
+  section.hero .parent-avatar {
+    width: 110px;
+    height: 110px;
     margin: 0 auto;
   }
 }
