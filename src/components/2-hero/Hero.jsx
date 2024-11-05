@@ -1,16 +1,15 @@
 import React from 'react'
 import './hero.css'
+import Lottie from 'lottie-react';
+import hero from "../../animation/hero.json";
+
 export default function Hero() {
   return (
     <div className="hero-bg">
       <section className="hero flex">
         <div className="left-section">
           <div className="parent-avatar">
-            <img
-              src="../../public/anwarrior01-logo.png"
-              alt=""
-              className="avatar"
-            />
+            <img src="../../public/anwarrior01.png" alt="" className="avatar" />
           </div>
 
           <h1 className="title">
@@ -32,7 +31,14 @@ export default function Hero() {
             <div className="icon icon-github"></div>
           </div>
         </div>
-        <div className="right-section animation border">bbbbbbbbb</div>
+        <div className="right-section animation ">
+          <Lottie
+            style={{
+              width:"33rem"
+            }}
+            animationData={hero}
+          />
+        </div>
       </section>
     </div>
   );

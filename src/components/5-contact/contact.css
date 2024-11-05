@@ -18,19 +18,21 @@ section.contact-us label{
 }
 section.contact-us #email,section.contact-us #msg{
     all: unset;
-    background-color: rgba(63, 63, 70, .2);
+    background-color: var(--project-card);
     border: 1px solid rgb(63, 63, 70);
     width: 22rem;
     padding: 0.5rem 1rem;
     margin-left: 1rem;
     border-radius: 5px;
-    transition: .5s;
+    transition: .8s;
 }
 section.contact-us #email:focus,section.contact-us #msg:focus{
     border: 1px solid var(--blue);
+    background-color: rgba(63, 63, 70, .2);;
 }
 section.contact-us #email:hover,section.contact-us #msg:hover{
-    border: 1px solid var(--yellow);}
+    border: 1px solid var(--yellow);
+background-color: rgba(63, 63, 70, .2);}
     
 section.contact-us #msg{
     min-height: 9rem;
@@ -39,7 +41,7 @@ section.contact-us #msg{
     margin-bottom: 2rem;
 }
 section.contact-us .submit{
-    background-color: rgba(36,37,46,1);
+    background-color: var(--projects-btn);
     width: 11rem;
     padding: 0.75rem 0;
     text-align: center;
@@ -47,8 +49,8 @@ section.contact-us .submit{
     text-transform: uppercase;
     letter-spacing: 1px;
     color: var(--text-primary);
-    opacity: .6;
-    border: 1px solid var(--yellow);
+    opacity: .8;
+    border: 1px solid var(--projects-border);
 }
 section.contact-us .submit:hover{
   opacity: 1;
@@ -81,4 +83,10 @@ section.contact-us .submit:hover{
         padding: .7rem 0;
         margin-top: 1rem;
     }
+}
+@media (max-width: 1100px) {
+    .contact-animation{
+        display: none;
+    }
+
 }

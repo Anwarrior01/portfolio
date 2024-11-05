@@ -21,14 +21,14 @@ main section.left-section.flex{
     gap: 16px;
 }
 main section.left-section.flex button{
-    background-color: rgba(36,37,46,1);
+    background-color: var(--projects-btn);
     width: 11rem;
     padding: 0.75rem 0;
     text-align: center;
     font-size: 1.05rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--text-primary);
+    color: var(--projects-btn-text-primary);
     opacity: .6;
 }
 main section.left-section.flex button.active{
@@ -38,7 +38,7 @@ main section.left-section.flex button.active{
     /* box-shadow: var(--icon-glow-hover); */
     /* border: 1px solid var(--border); */
     border: 1px solid var(--blue);
-    text-shadow: var(--icon-glow);
+    text-shadow: var(--icon-glow-hover);
     padding: 0.8rem 0;
 }
 main section.left-section.flex button:hover{
@@ -68,11 +68,28 @@ main section.right-section.flex{
     justify-content: center;
 }
 .card{
+    box-shadow: -1px 1px 1px rgba(255, 239, 136, 0.14),-1px 1px 1px rgba(255, 239, 136, 0.16);
     border: 1px solid var(--blue-light);
     transition: .5s;
-    background-image: linear-gradient(rgba(255,255,255,.08),rgba(0, 0, 0, 0.196));
+    background-image: var(--project-card);
 }
 .card:hover{
+    box-shadow: -1px 1px 12px rgba(255, 239, 136, 0.24),-1px 1px 12px rgba(255, 239, 136, 0.26);
+
+    border: 1px solid var(--blue);
+    rotate: 2deg;
+    scale: 1.05;
+    cursor: pointer;
+}
+.light .card{
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.14),-1px 1px 1px rgba(0, 0, 0, 0.16);
+    border: 1px solid var(--blue-light);
+    transition: .5s;
+    background-image: var(--project-card);
+}
+.light .card:hover{
+    box-shadow: -1px 1px 12px rgba(0, 0, 0, 0.24),-1px 1px 12px rgba(0, 0, 0, 0.26);
+
     border: 1px solid var(--blue);
     rotate: 2deg;
     scale: 1.05;

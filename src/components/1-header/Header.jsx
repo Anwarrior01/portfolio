@@ -1,10 +1,28 @@
-import React, { useState } from 'react'
-import './header.css'
-export default function Header() {
-  const [show,setShow]=useState(false)
-  const showMenu = () =>{
-    setShow(true)
+import React, { useEffect, useState } from "react";
+import "./header.css";
+export default function Header({ mode, changeMode }) {
+  const [show, setShow] = useState(false);
+  const [theme, setTheme] = useState(
+    localStorage.getItem("currentMode") ?? "dark"
+  );
+  useEffect(() => {
+    if (theme === "light") {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+      modeChange()
+    } else {
+      document.body.classList.remove("light");
+      document.body.classList.add("dark");
+      modeChange()
+    }
+  }, [theme]);
+  const modeChange = () => {
+      const mode = theme
+      changeMode(mode);
   }
+  const showMenu = () => {
+    setShow(true);
+  };
   const closeMenu = () => {
     setShow(false);
   };
@@ -36,8 +54,21 @@ export default function Header() {
         </ul>
       </nav>
       {/* <div style={{ width: "25%" }} className='marginLeft' /> */}
-      <button className="mode">
-        <span className="icon-moon-o"></span>
+      <button
+        className="mode"
+        onClick={() => {
+          localStorage.setItem(
+            "currentMode",
+            theme === "dark" ? "light" : "dark"
+          );
+          setTheme(localStorage.getItem("currentMode"));
+        }}
+      >
+        {theme === "dark" ? (
+          <span className="icon-moon-o"></span>
+        ) : (
+          <span className="icon-sun"></span>
+        )}
       </button>
       {show ? (
         <div className=" fixed ">

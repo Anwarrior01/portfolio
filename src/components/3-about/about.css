@@ -1,0 +1,46 @@
+/* Header and general layout styles as before */
+
+/* ============================================================================== */
+/* About Section Layout */
+/* ============================================================================== */
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Text and image content styles */
+.text-content {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.image-content {
+  /* Sample styles for image placeholder */
+  width: 150px;
+  height: 150px;
+  background-color: var(--bg-lighter);
+  border-radius: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .image-content, .text-content {
+    margin: 1rem 0;
+  }
+  .first,.third,.fifth{
+    order:1 !important;
+  }
+  .second,.fourth,.sexth{
+    order:2 !important;
+  }
+}

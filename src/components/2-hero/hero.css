@@ -9,14 +9,17 @@ Table of Contents
 /* ==============================================================================
 1 - left Section 
  ===============================================================================*/
-.hero-app {
+section.hero{
+  justify-content: space-around;
+}
+ .hero-app {
   margin: 0 auto;
   width: 80%;
 }
 .hero-bg {
   padding: 2rem 4rem;
   margin: 0 auto;
-  background: url("../../../public/bg-portfolio.png"), #0b0b0bd3;
+  background: var(--hero-bg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -53,12 +56,16 @@ section.hero h1.title {
   color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: 135%;
+  font-weight: bold;
 }
 section.hero p.sub-title {
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.5rem;
   margin-bottom: 2rem;
+  width: 135%;
+
 }
 section.hero .all-icons {
   font-size: 1.6rem;
@@ -89,6 +96,26 @@ section.hero .all-icons .icon:hover {
     font-size: .8rem;
     margin-bottom: .8rem;
   }
+  section.hero{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+  }
+   section.hero h1.title,
+section.hero p.sub-title{
+  width: 100% !important;
+}
+.right-section.animation{
+  margin-right: 14rem !important; 
+}
+}
+@media (max-width: 1200px) {
+  section.hero h1.title,
+section.hero p.sub-title{
+  width: 180%;
+}
+
+
 }
 /* @media (max-width: 700px) {
   .hero-app {
@@ -112,3 +139,6 @@ section.hero .all-icons .icon:hover {
 /* ==============================================================================
 2 - Right Section (Animation)
  ===============================================================================*/
+.right-section.animation{
+  translate: 8rem 2rem;
+}

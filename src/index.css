@@ -1,7 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -28,8 +30,35 @@ html {
   --icon-glow: 1px 1px 10px #f5cc5c48, 2px 2px 12px #54200048,
     3px 3px 16px #000000;
   --icon-glow-hover: 1px 1px 10px #f8d87f48;
+  --projects-btn : #24252e; 
+  --projects-border : #FFD93D;
+  --projects-btn-text-primary: #cfdbd5;
+  --project-card : linear-gradient(rgba(255,255,255,.08),rgba(0, 0, 0, 0.196));
+  --hero-bg : url("../../../public/bg-portfolio.png"), #0b0b0bd3; 
 }
+.light{
+  --primary: #E8EDDF;
+  --secondary: #e3f0ee;
+  --bg-lighter: #CFDBD5;
+  --text-primary: #333533;
+  --text-primary-hover: #3a3d42;
+  --text-secondary: #242423;
+  --yellow: #f5cb5c;
+  --border: #CFDBD5;
+  --title: #ffe372;
+  --sub-title: #FFD93D;
+  --blue-light: rgba(93, 188, 152, 0.578);
+  --blue: rgb(10, 37, 55);
+  --icon-glow: 1px 1px 10px #50727bb0, 2px 2px 12px #535c915a,
+  3px 3px 16px #1B1A55;
+  --icon-glow-hover: 1px 1px 10px #535c915a;
+  --hero-bg : url("../../../public/bg-portfolio.png"), #CFDBD5; 
+  --projects-btn : #FFD93D;
+  --projects-border : rgb(10, 37, 55);
+  --projects-btn-text-primary: #242423;
+  --project-card : linear-gradient(#e8eddfa6,#cfdbd59b);
 
+}
 body {
   background: var(--primary);
   color: var(--text-primary);

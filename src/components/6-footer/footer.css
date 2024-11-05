@@ -34,7 +34,7 @@ footer.flex .all-icons .icon {
 footer.flex .all-icons .icon:hover {
   color: var(--title);
   border: 0.3px solid #f5cc5c;
-  box-shadow: var(--icon-glow-hover);
+  box-shadow: var(--icon-glow);
   transition: all 0.5s;
 }
 @media (max-width:800px) {
