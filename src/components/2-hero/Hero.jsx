@@ -35,8 +35,9 @@ export default function Hero() {
             <div className="icon icon-github"></div>
           </div>
         </div>
-        <div className="right-section animation ">
+        <div className="right-section animation">
           <Lottie
+          className='laptop'
             style={{
               width: "33rem",
             }}
