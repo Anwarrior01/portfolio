@@ -29,9 +29,9 @@ import Lottie from "lottie-react";
 
 export default function About({ mode }) {
   return (
-    <div className="about max-w-[100%] ml-8 px-0 py-6 grid " id="about">
+    <div className="about md:max-w-[100%] ml-0 px-0 py-6 grid" id="about">
       {/* Frontend Skills Section */}
-      <div className="md:flex items-center gap-8">
+      <div className="md:flex items-center gap-8  border">
         <div className="md:w-1/2 order-2 md:order-1 p-6">
           <h2
             style={{ color: "var(--text-primary)" }}
@@ -68,9 +68,10 @@ export default function About({ mode }) {
         <div className="md:w-1/2 order-1 md:order-2 flex justify-center second">
           <Lottie
             style={{
-              width: "32rem",
-              overflow: "hidden",
+              width: "100%", // use 100% to make it responsive
+              maxWidth: "32rem", // restrict maximum width
               height: "24rem",
+              overflow: "hidden",
             }}
             animationData={mode === "dark" ? aboutBlue : aboutYellow}
           />
@@ -78,7 +79,7 @@ export default function About({ mode }) {
       </div>
 
       {/* Backend Skills Section */}
-      <div className="md:flex items-center gap-12">
+      <div className="md:flex items-center border gap-12">
         {/* Text content */}
         <div className="md:w-1/2 order-1 md:order-2 p-6 fourth sm:ml-20 ml-0">
           <h2
@@ -112,8 +113,10 @@ export default function About({ mode }) {
         <div className="md:w-1/2 order-2 md:order-1 py-6 third sm:-translate-x-10 -translate-x-0">
           <Lottie
             style={{
-              width: "32rem",
+              width: "100%", // use 100% to make it responsive
+              maxWidth: "32rem", // restrict maximum width
               height: "24rem",
+              overflow: "hidden",
             }}
             animationData={mode === "dark" ? frontEndBlue : frontEndYellow}
           />
@@ -121,7 +124,7 @@ export default function About({ mode }) {
       </div>
 
       {/* Full-Stack/Tools Section */}
-      <div className="md:flex items-center gap-8">
+      <div className="md:flex items-center gap-8 border">
         <div className="md:w-1/2 order-2 md:order-1 p-6 fifth">
           <h2
             style={{ color: "var(--text-primary)" }}
@@ -148,9 +151,10 @@ export default function About({ mode }) {
         <div className="md:w-1/2 order-1 md:order-2 flex justify-center sexth">
           <Lottie
             style={{
-              width: "32rem",
-              overflow: "hidden",
+              width: "100%", // use 100% to make it responsive
+              maxWidth: "32rem", // restrict maximum width
               height: "24rem",
+              overflow: "hidden",
             }}
             animationData={mode === "dark" ? backEndBlue : backEndYellow}
           />
