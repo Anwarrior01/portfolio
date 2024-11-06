@@ -35,7 +35,6 @@ function App() {
       </div>
       <div className="container">
         {/* <div className="devider"></div> */}
-        <About mode={mode}  />
         <div className="devider"></div>
         <Main />
         <div className="devider"></div>

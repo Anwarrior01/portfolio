@@ -175,3 +175,9 @@ section.hero .all-icons .icon:hover {
 .right-section.animation {
   translate: 8rem 2rem;
 }
+@media (max-width: 1000px) {
+    .right-section.animation{
+        display: none;
+    }
+
+}
