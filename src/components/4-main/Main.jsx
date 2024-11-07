@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./main.css";
 import {myProjects} from "./myProjects"
+import { AnimatePresence, motion, transform } from "framer-motion";
+import ProjectDetails from "./ProjectDetails";
 
-export default function Main() {
+export default function Main({ mode}) {
+  const [selectedProject, setSelectedProject] = useState(null);
   const handleClick = (buttonCategory) => {
     setCurrentActive(buttonCategory);
     const newArr = myProjects.filter((item) => {
@@ -13,15 +16,22 @@ export default function Main() {
     });
     setArray(newArr);
   };
+  const handleProjectClick = (project) => {
+    setSelectedProject(project);
+  };
+  const handleBackClick = () => {
+    setSelectedProject(null);
+  };
+
   const [currentActive, setCurrentActive] = useState("all");
   const [array, setArray] = useState(myProjects);
-  return (
+  return !selectedProject ? (
     <main className="flex">
-      <section className="left-section flex">
+      <section className="left-section flex" id="projects">
         <button
           onClick={() => {
             setCurrentActive("all");
-            setArray(myProjects)
+            setArray(myProjects);
           }}
           className={currentActive === "all" ? "active" : null}
         >
@@ -93,32 +103,63 @@ export default function Main() {
         </button>
       </section>
       <section className="right-section flex">
-        {array.map((item, key) => {
-          return (
-            <article className="card ">
-              <img width={"270px"} src={item.img} alt="" />
-              <div style={{ width: "270px" }} className="box ">
-                <h1 className="title">{item.title}</h1>
-                <p className="sub-title">{item.description}</p>
-                <div className="flex icons">
-                  <div className="flex" style={{ gap: "12px" }}>
-                    <div className="icon-link"></div>
-                    <div className="icon-github"></div>
+        <AnimatePresence>
+          {array.map((item, key) => {
+            return (
+              <motion.article
+                layout
+                initial={{ transform: "scale(0)" }}
+                animate={{ transform: "scale(1)" }}
+                transition={{
+                  type: "spring",
+                  duration: 1,
+                  damping: 8,
+                  stiffness: 50,
+                }}
+                className="card "
+                key={key}
+              >
+                <img width={"270px"} src={item.img} alt="" />
+                <div style={{ width: "270px" }} className="box ">
+                  <h1 className="title">{item.title}</h1>
+                  <p className="sub-title">{item.description}</p>
+                  <div className="flex icons">
+                    <div className="flex" style={{ gap: "12px" }}>
+                      <a href={item.demo} target={item.demo}>
+                        <div className="icon-link"></div>
+                      </a>
+                      <a href={item.github} target={item.github}>
+                        {" "}
+                        <div className="icon-github"></div>
+                      </a>
+                    </div>
+                    {item.show_more ? (
+                      <a
+                        onClick={() => handleProjectClick(item)}
+                        className="link flex"
+                        style={{ gap: "3px", alignItems: "center" }}
+                      >
+                        more <span className="icon-arrow-right"></span>
+                        {""}
+                      </a>
+                    ) : (
+                      ""
+                    )}
                   </div>
-                  <a
-                    href=""
-                    className="link flex"
-                    style={{ gap: "3px", alignItems: "center" }}
-                  >
-                    more <span className="icon-arrow-right"></span>
-                    {""}
-                  </a>
                 </div>
-              </div>
-            </article>
-          );
-        })}
+              </motion.article>
+            );
+          })}
+        </AnimatePresence>
       </section>
     </main>
+  ) : (
+    <ProjectDetails
+      mode={mode}
+      project={selectedProject}
+      title={selectedProject.title}
+      description={selectedProject.description}
+      onBack={handleBackClick}
+    />
   );
 }

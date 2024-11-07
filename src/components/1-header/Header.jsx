@@ -27,7 +27,7 @@ export default function Header({ mode, changeMode }) {
     setShow(false);
   };
   return (
-    <header className="flex">
+    <header className="flex" id="home">
       <button
         onClick={() => {
           showMenu();
@@ -40,16 +40,16 @@ export default function Header({ mode, changeMode }) {
       <nav>
         <ul className="flex">
           <li>
-            <a href="">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
@@ -80,16 +80,16 @@ export default function Header({ mode, changeMode }) {
                 </button>
               </li>
               <li>
-                <a href="">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
-                <a href="">About</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <a href="">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>

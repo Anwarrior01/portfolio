@@ -31,7 +31,7 @@ export default function About({ mode }) {
   return (
     <div className="about md:max-w-[100%] ml-0 px-0 py-6 grid" id="about">
       {/* Frontend Skills Section */}
-      <div className="md:flex items-center gap-8  border">
+      <div className="md:flex items-center gap-8  ">
         <div className="md:w-1/2 order-2 md:order-1 p-6">
           <h2
             style={{ color: "var(--text-primary)" }}
@@ -79,7 +79,7 @@ export default function About({ mode }) {
       </div>
 
       {/* Backend Skills Section */}
-      <div className="md:flex items-center border gap-12">
+      <div className="md:flex items-center  gap-12">
         {/* Text content */}
         <div className="md:w-1/2 order-1 md:order-2 p-6 fourth sm:ml-20 ml-0">
           <h2
@@ -124,7 +124,7 @@ export default function About({ mode }) {
       </div>
 
       {/* Full-Stack/Tools Section */}
-      <div className="md:flex items-center gap-8 border">
+      <div className="md:flex items-center gap-8 ">
         <div className="md:w-1/2 order-2 md:order-1 p-6 fifth">
           <h2
             style={{ color: "var(--text-primary)" }}

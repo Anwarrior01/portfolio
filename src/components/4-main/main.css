@@ -5,140 +5,139 @@ Table of Contents
 1 - left-Section Styling
 2 - Right-Section Styling
 3 - Responsive
+4 - Project Details
 */
 
-
-main.flex{
-   gap: 3rem;
-   align-items: start;
+main.flex {
+  gap: 3rem;
+  align-items: start;
 }
 
 /* ==============================================================================
 1 - left-Section Styling
  ===============================================================================*/
-main section.left-section.flex{
-    flex-direction: column;
-    gap: 16px;
+main section.left-section.flex {
+  flex-direction: column;
+  gap: 16px;
 }
-main section.left-section.flex button{
-    background-color: var(--projects-btn);
-    width: 11rem;
-    padding: 0.75rem 0;
-    text-align: center;
-    font-size: 1.05rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--projects-btn-text-primary);
-    opacity: .6;
+main section.left-section.flex button {
+  background-color: var(--projects-btn);
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--projects-btn-text-primary);
+  opacity: 0.6;
 }
-main section.left-section.flex button.active{
-    opacity: 1;
-    font-weight: bold;
-    letter-spacing: 1.2px;
-    /* box-shadow: var(--icon-glow-hover); */
-    /* border: 1px solid var(--border); */
-    border: 1px solid var(--blue);
-    text-shadow: var(--icon-glow-hover);
-    padding: 0.8rem 0;
+main section.left-section.flex button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  /* box-shadow: var(--icon-glow-hover); */
+  /* border: 1px solid var(--border); */
+  border: 1px solid var(--blue);
+  text-shadow: var(--icon-glow-hover);
+  padding: 0.8rem 0;
 }
-main section.left-section.flex button:hover{
-    opacity: 1;
+main section.left-section.flex button:hover {
+  opacity: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==============================================================================
 2 - Right-Section Styling
  ===============================================================================*/
 
-main section.right-section.flex{
-    flex-grow: 1;
-    flex-wrap: wrap;
-    column-gap: 1.6rem;
-    row-gap: 2rem;
-    justify-content: center;
+main section.right-section.flex {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  column-gap: 1.6rem;
+  row-gap: 2rem;
+  justify-content: center;
 }
-.card{
-    box-shadow: -1px 1px 1px rgba(255, 239, 136, 0.14),-1px 1px 1px rgba(255, 239, 136, 0.16);
-    border: 1px solid var(--blue-light);
-    transition: .5s;
-    background-image: var(--project-card);
+.card {
+  box-shadow: -1px 1px 1px rgba(255, 239, 136, 0.14),
+    -1px 1px 1px rgba(255, 239, 136, 0.16);
+  border: 1px solid var(--blue-light);
+  transition: 0.5s;
+  background-image: var(--project-card);
 }
-.card:hover{
-    box-shadow: -1px 1px 12px rgba(255, 239, 136, 0.24),-1px 1px 12px rgba(255, 239, 136, 0.26);
+.card:hover {
+  box-shadow: -1px 1px 12px rgba(255, 239, 136, 0.24),
+    -1px 1px 12px rgba(255, 239, 136, 0.26);
 
-    border: 1px solid var(--blue);
-    rotate: 2deg;
-    scale: 1.05;
-    cursor: pointer;
+  border: 1px solid var(--blue);
+  rotate: 2deg;
+  scale: 1.05;
+  cursor: pointer;
 }
-.light .card{
-    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.14),-1px 1px 1px rgba(0, 0, 0, 0.16);
-    border: 1px solid var(--blue-light);
-    transition: .5s;
-    background-image: var(--project-card);
+.light .card {
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.14), -1px 1px 1px rgba(0, 0, 0, 0.16);
+  border: 1px solid var(--blue-light);
+  transition: 0.5s;
+  background-image: var(--project-card);
 }
-.light .card:hover{
-    box-shadow: -1px 1px 12px rgba(0, 0, 0, 0.24),-1px 1px 12px rgba(0, 0, 0, 0.26);
+.light .card:hover {
+  box-shadow: -1px 1px 12px rgba(0, 0, 0, 0.24),
+    -1px 1px 12px rgba(0, 0, 0, 0.26);
 
-    border: 1px solid var(--blue);
-    rotate: 2deg;
-    scale: 1.05;
-    cursor: pointer;
+  border: 1px solid var(--blue);
+  rotate: 2deg;
+  scale: 1.05;
+  cursor: pointer;
 }
 
-.card .box{
-    padding: 1rem 0.2rem 1rem .8rem ;
+.card .box {
+  padding: 1rem 0.2rem 1rem 0.8rem;
 }
-.card .box .title{
-    color: var(--text-primary);
-    text-transform: capitalize;
+.card .box .title {
+  color: var(--text-primary);
+  text-transform: capitalize;
 }
-.card .box .sub-title{
-    color: var(--text-secondary);
-    font-size: 0.8rem;
-    margin-top: .7rem;
-    margin-bottom: 1.8rem;
+.card .box .sub-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em;
+  line-height: 1.5em;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.8rem;
 }
-.card .box .icons{
-    justify-content: space-between;
+.card .box .icons {
+  justify-content: space-between;
 }
-.card .box .icon-link ,
-.card .box .icon-github{
-    font-size: 1.2rem;
-    color: var(--text-primary);
-    cursor: pointer;
-    transition: .5s;
-    opacity: 0.7;
+.card .box .icon-link,
+.card .box .icon-github {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0.7;
 }
-.card .box .icon-link:hover ,
-.card .box .icon-github:hover{
-    font-size: 1.3rem;
-    color: var(--yellow);
-    border-radius: 50%;
-    box-shadow: var(--icon-glow-hover);
-    opacity: 1;
+.card .box .icon-link:hover,
+.card .box .icon-github:hover {
+  font-size: 1.3rem;
+  color: var(--yellow);
+  border-radius: 50%;
+  box-shadow: var(--icon-glow-hover);
+  opacity: 1;
 }
-.card .box .link{
-    font-size: .9rem;
-    color: var(--yellow);
-    opacity: 0.8;
-    margin-right: 8px;
-    transition: .3s;
+.card .box .link {
+  font-size: 0.9rem;
+  color: var(--more);
+  opacity: 0.8;
+  margin-right: 8px;
+  transition: 0.3s;
 }
-.card .box .link:hover{
-    font-size: 1rem;
-    opacity: 1;
-    margin-right: 4px;
+.card .box .link:hover {
+  font-size: 1rem;
+  opacity: 1;
+  margin-right: 4px;
 }
 
 /* ==============================================================================
@@ -146,19 +145,211 @@ main section.right-section.flex{
  ===============================================================================*/
 
 @media (max-width: 600px) {
- main.flex{
+  main.flex {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
- }
- main section.left-section.flex{
+  }
+  main section.left-section.flex {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
- }
- main section.left-section.flex button{
+  }
+  main section.left-section.flex button {
     width: 7rem;
     padding: 0.8rem 0;
     font-size: 0.8rem;
- }
+  }
+}
+
+/* ==============================================================================
+4 - Project Details
+ ===============================================================================*/
+.details-header {
+  display: flex;
+  align-items: flex-start;
+}
+.back-button {
+  background-color: transparent;
+  border: 2px solid var(--more);
+  color: var(--more);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-icon {
+  font-size: 18px;
+}
+
+.back-button:hover {
+  background-color: var(--more);
+  color: white;
+}
+.details-header-info {
+  text-align: center;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.details-header-info h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+.details-header-info p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+.details-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.project-details {
+  padding: 20px;
+}
+
+/* right */
+.details-right {
+  width: 90%;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.details-web-img {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: end;
+  justify-content: center;
+  width: 50%;
+  order: 2;
+}
+.details-web-img img {
+}
+.details-web-img-desc {
+  flex-grow: 1;
+  width: 50%;
+  order: 1;
+}
+.colors {
+  margin-top: 1rem;
+  width: 70%;
+}
+.colors li {
+  margin-top: 1.6rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.colors li.color {
+    display: flex;
+
+}
+.details-web-img-desc h1 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 0.2rem;
+}
+.details-web-img-desc h3 {
+  margin-top: 1.6rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* Left */
+.details-left {
+  width: 90%;
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+.details-mobile-img {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+  justify-content: flex-start;
+  width: 60%;
+
+}
+.details-web-mobile-desc {
+  width: 40%;
+}
+.details-mobile-img-desc h1 {
+  color: var(--text-primary);
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-left: 1.2rem;
+}
+.details-mobile-img-desc h3 {
+  margin-top: 1.6rem;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-left: 1.2rem;
+}
+
+
+
+
+/* responsiveness */
+@media (max-width: 768px) {
+  .back-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .details-header{
+    flex-direction: column;
+  }
+  .details-header-info{
+    margin: 0 auto;
+  }
+  .details-header-info p{
+    line-height: 1.2rem;
+  }
+  .details-right {
+    width: 100%;
+    flex-direction: column;
+  }
+  .details-web-img-desc{
+    width: 100%;
+    text-align: center;
+  }
+  .details-web-img-desc h1{
+    font-size: 1rem;
+  }
+  .details-web-img{
+    width: 100%;
+    margin-top: 2rem;
+  }
+   .details-left {
+    width: 100%;
+    flex-direction: column;
+  }
+  .details-mobile-img-desc{
+    width: 100%;
+    text-align: center;
+    order: 1;
+  }
+  .details-mobile-img-desc h1{
+    font-size: 1rem;
+  }
+  .details-mobile-img-desc h3{
+    font-size: 1rem;
+  }
+  .details-mobile-img{
+    width: 100%;
+    margin-top: 2rem;
+    order: 2;
+  }
 }

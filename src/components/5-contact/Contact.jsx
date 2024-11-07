@@ -10,7 +10,7 @@ export default function Contact({mode}) {
   const [state, handleSubmit] = useForm("xzzbeovr");
 
   return (
-    <section className="contact-us">
+    <section className="contact-us" id="contact">
       <h1 className="title">
         <span className="icon-mail1"></span>
         Contact me

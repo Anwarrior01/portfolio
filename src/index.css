@@ -35,6 +35,9 @@ html {
   --projects-btn-text-primary: #cfdbd5;
   --project-card : linear-gradient(rgba(255,255,255,.08),rgba(0, 0, 0, 0.196));
   --hero-bg : url("../../../public/bg-portfolio.png"), #0b0b0bd3; 
+  --nav-shadow : 1px 1px 10px #605b154a ,1px 1px 15px #eff39c31 ;
+  --more : #f5cb5c;
+
 }
 .light{
   --primary: #E8EDDF;
@@ -57,7 +60,8 @@ html {
   --projects-border : rgb(10, 37, 55);
   --projects-btn-text-primary: #242423;
   --project-card : linear-gradient(#e8eddfa6,#cfdbd59b);
-
+  --nav-shadow : 1px 1px 30px #2d2d2d ,1px 1px 10px #97979747 ;
+  --more : rgb(10, 37, 55);
 }
 body {
   background: var(--primary);

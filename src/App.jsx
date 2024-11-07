@@ -28,16 +28,15 @@ function App() {
       <div className="container">
         <Header mode={mode} changeMode={changeMode} />
         <div className="devider"></div>
-        
       </div>
       <div className="hero-app">
         <Hero />
       </div>
       <div className="container">
         {/* <div className="devider"></div> */}
-        <About mode={mode}  />
+        <About mode={mode} />
         <div className="devider"></div>
-        <Main />
+        <Main mode={mode} />
         <div className="devider"></div>
         <Contact mode={mode} />
         <div className="devider"></div>
